@@ -5,7 +5,6 @@ import UrlShortenerImg from "../assets/url-shortener-snapshot.jpg";
 import moldyImg from "../assets/moldy-snapshot.jpg";
 import unitaskImg from "../assets/unitask-logo.jpg";
 import JSlogo from "../assets/JS-logo.png";
-import Githublogo from "../assets/Github-logo.png";
 import CSSlogo from "../assets/CSS-logo.png";
 import HTMLlogo from "../assets/HTML-logo.png";
 import mongologo from "../assets/mongo-logo.png";
