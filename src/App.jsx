@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import Projects from './components/projects';
+import Projects from './components/Projects';
 import Summary from './components/Summary';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
