@@ -1,0 +1,163 @@
+/* Estilos generales */
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 100px 0 100px;
+    padding-bottom: 50px;
+}
+.main-title{
+    margin: 20px auto;
+    font-size: 2rem;
+    text-align: center;
+    color: #000000;
+}
+.projects-main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Cada caja de proyecto */
+@keyframes shadow-drop-center{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 20px 0 rgba(151, 149, 149, 0.55)}}
+.project-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #ffffff; 
+    border-radius: 12px;
+    overflow: hidden;
+    width: 320px; /* Ajusta según necesidad */
+
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-box:hover {
+    animation:shadow-drop-center 0.4s linear both;
+    transform: scale(1.03);
+    box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Contenedor de imagen/video */
+.media-container {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.project-img, .project-video {
+    width: 99%;
+    height: 99%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.link-div{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+}
+
+/* Títulos y textos */
+.title-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.title-div h3 {
+    color: #151912;
+    font-size: 20px;
+    margin: 15px;
+    font-weight: 600;
+}
+
+.title-div p {
+    color: #414241;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Descripción */
+.project-box p {
+    color: #4d4c4c;
+    font-size: 14px;
+    padding: 0 15px;
+}
+.fa-icon-link:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+.fa-icon-link{
+    margin: 15px 0;
+    color: #1e1f1e;
+}
+.fa-linkedin-square:hover{
+    color: #f7c473;
+    transform: scale(1.2);
+}
+.fa-github:hover{
+    color: #f7c473;
+    transform: scale(1.2); 
+}
+.fa-link:hover{
+    color: #f7c473;
+    transform: scale(1.2); 
+}
+.fa-envelope:hover{
+    color: #f7c473;
+    transform: scale(1.2); 
+}
+/* Enlace */
+.fa-icon-link{
+    display: block;
+    color: #f5a623;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 15px;
+    transition: color 0.3s ease-in-out;
+    margin-right: 10px;
+}
+
+.project-box a:hover {
+    color: #f7c473;
+    text-decoration: underline;
+}
+.img-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Logos de herramientas */
+.tools-logo-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 15px;
+}
+
+.tool-img {
+    height: 30px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.tool-img:hover {
+    opacity: 1;
+}
+.titles-div{
+    margin-bottom: 20px;
+}
+
