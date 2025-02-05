@@ -29,7 +29,8 @@ const Projects = () => {
             image: rpmimg,
             video: rpmVideo,
             techStack: [HTMLlogo, CSSlogo, JSlogo, reactlogo, nodelogo, mongologo],
-            githubLink: "https://github.com/SashaWaszaj/RPM"
+            githubLink: "https://github.com/SashaWaszaj/RPM",
+            QAPlanLink: "https://drive.google.com/file/d/11TfzYyyrd-kPIctQQjUjH35X6PcCWI-I/view?usp=sharing"
         },
         {
             title: "URL Shortener",
@@ -49,7 +50,8 @@ const Projects = () => {
             image: moldyImg,
             video: moldyVideo,
             techStack: [HTMLlogo, CSSlogo, JSlogo, reactlogo, nodelogo, mongologo],
-            github: "https://github.com/SashaWaszaj/Moldy-Tomatoes"
+            github: "https://github.com/SashaWaszaj/Moldy-Tomatoes",
+            QAPlanLink: "https://drive.google.com/file/d/1uPFucbULHDqBv5wXrva460inB_zkgLaa/view?usp=sharing"
         },
         {
             title: "UniTask App",
@@ -82,6 +84,10 @@ const Projects = () => {
                             <a href={project.url} target="_blank" rel="noopener noreferrer" className="fa-icon-link">
                             <i className="fa fa-link" aria-hidden="true" style={{fontSize: "large", color: "#1e1f1e"}}></i></a></div>
                             <p>{project.date} </p>
+                        </div>
+
+                        <div>
+                            { project.QAPlanLink ? <a href={project.QAPlanLink} target="_blank" className="QAPlanLink">QA Plan</a> : <p></p>}
                         </div>
                         </div>
                         <div>
