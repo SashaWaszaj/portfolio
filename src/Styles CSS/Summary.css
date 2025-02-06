@@ -107,3 +107,81 @@
 .triangulos-picture{
     height: 120px;
 }
+
+@media (min-width: 768px) {
+    .summary-section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 80%;
+        text-align: left;
+    }
+
+    .left-side-section {
+        align-items: flex-start;
+        max-width: 60%;
+    }
+
+    .summary-text {
+        max-width: 100%;
+    }
+
+    .profile-img-section {
+        margin-top: 0;
+    }
+
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .summary-container {
+        padding: 40px;
+    }
+
+    .typing-word {
+        font-size: 2rem;
+    }
+
+    .summary-section {
+        max-width: 70%;
+    }
+
+    .profile-picture {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .typing-word {
+        font-size: 1.2rem; /* Reduce el tamaño del texto */
+    }
+
+    .summary-text {
+        font-size: 0.9rem;
+    }
+
+    .triangulos-picture {
+        height: 40px; /* Reduce el tamaño de la imagen decorativa */
+    }
+
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+    }
+
+    .summary-container {
+        padding: 15px;
+    }
+    .summary-section{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .summary-text p{
+        font-size: small;
+    }
+}
+
